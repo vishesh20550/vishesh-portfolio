@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Dosis:wght@200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pirata+One&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.home-container{
+    height: 100%;
+    padding: 2rem 3rem 2rem 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: inline-block;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 2rem;
+}
+.introduction{
+    display: flex;
+    flex-direction: column;
+}
+.introduction span{
+    padding: 0.5rem;
+}
+
+.socials{
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: center;
+}
+
+.socials img{
+    height: 4rem;
+    width: 4rem;
+}
+
+#linkedin-logo:hover, #github-logo:hover{
+    transform: scale(150%);
+}
+
+#hi{
+    font-size: 1.2rem;
+}
+
+#name {
+    font-size: 5rem;
+    color: #f2f2f2;
+    font-family: "Cinzel", serif;
+}
+
+#tagline {
+    color: #ffe391;
+    font-size: 2.5rem;
+    white-space: nowrap; 
+    overflow: hidden; 
+    border-right: 0.05em solid #ffe391; 
+    animation: typing 3.5s steps(40, end) forwards, blink-caret 0.75s step-end infinite;
+}
+
+#desc {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; } /* Expands to the full width of the content */
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #ffe391; } /* Color of the cursor blink */
+}
