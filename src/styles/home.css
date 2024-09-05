@@ -1,48 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Dosis:wght@200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pirata+One&display=swap');
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-.home-container{
+
+.home-container {
     height: 100%;
-    padding: 2rem 3rem 2rem 3rem;
+    padding: 2rem 3rem;
     margin-left: 2rem;
     margin-right: 2rem;
-    display: inline-block;
 }
-.content{
+
+.content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     column-gap: 2rem;
 }
-.introduction{
+
+.introduction {
     display: flex;
     flex-direction: column;
 }
-.introduction span{
+
+.introduction span {
     padding: 0.5rem;
 }
 
-.socials{
+.socials {
     display: flex;
     flex-direction: column;
-    justify-content:start;
+    justify-content: start;
     align-items: center;
 }
 
-.socials img{
+.socials img {
     height: 4rem;
     width: 4rem;
 }
 
-#linkedin-logo:hover, #github-logo:hover{
+#linkedin-logo:hover, #github-logo:hover {
     transform: scale(150%);
 }
 
-#hi{
+#hi {
     font-size: 1.2rem;
 }
 
@@ -55,9 +57,9 @@
 #tagline {
     color: #ffe391;
     font-size: 2.5rem;
-    white-space: nowrap; 
-    overflow: hidden; 
-    border-right: 0.05em solid #ffe391; 
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.05em solid #ffe391;
     animation: typing 3.5s steps(40, end) forwards, blink-caret 0.75s step-end infinite;
 }
 
@@ -67,12 +69,68 @@
     padding: 0.5rem;
 }
 
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1024px) {
+    #name {
+        font-size: 3rem; /* Smaller font size on medium screens */
+    }
+    #tagline {
+        font-size: 2rem;
+    }
+    #desc {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column; /* Stack introduction and socials vertically */
+        align-items: center; /* Center align the content */
+    }
+
+    #name {
+        font-size: 2.5rem; /* Further reduce font size on smaller screens */
+    }
+
+    #tagline {
+        font-size: 1.8rem;
+    }
+
+    #desc {
+        font-size: 0.9rem;
+    }
+
+    .socials img {
+        height: 3rem; /* Smaller icons for socials */
+        width: 3rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #name {
+        font-size: 2rem; /* Adjust even more for mobile */
+    }
+
+    #tagline {
+        font-size: 1.5rem;
+    }
+
+    #desc {
+        font-size: 0.8rem;
+    }
+
+    .socials img {
+        height: 2.5rem; /* Smaller icons for very small screens */
+        width: 2.5rem;
+    }
+}
+
 @keyframes typing {
     from { width: 0; }
-    to { width: 100%; } /* Expands to the full width of the content */
+    to { width: 100%; }
 }
 
 @keyframes blink-caret {
     from, to { border-color: transparent; }
-    50% { border-color: #ffe391; } /* Color of the cursor blink */
+    50% { border-color: #ffe391; }
 }

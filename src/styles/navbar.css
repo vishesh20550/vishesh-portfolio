@@ -1,43 +1,52 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 
-.navbar{
+.navbar {
     padding: 0.5rem;
     display: flex;
     position: relative;
     justify-content: space-between;
-    align-items: center ;
+    align-items: center;
     background: rgba(0, 0, 0, 0.1);
-    /* position: fixed; */
     width: 100%;
     z-index: 10;
 }
-.logo{
+
+.logo {
     margin-left: 30px;
     width: 100px;
     height: 100px;
 }
-.navlist{
+
+.navlist {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
     margin-right: 10px;
 }
+
 .navbar li {
-  margin-right: 10px;
+    margin-right: 10px;
 }
 
 .nav-link {
-  padding: 10px 15px;
-  border-radius: 5px;
-  color:#F2F2F2;
-  text-decoration: none;
-  letter-spacing: 0.15em;
-  display: inline-block;
-  position: relative;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #F2F2F2;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    position: relative;
 }
-.nav-link:hover{
+
+.nav-link:hover {
     color: #ffe391;
     cursor: none;
 }
+
 .nav-link::after {
     content: '';
     position: absolute;
@@ -46,8 +55,68 @@
     bottom: 0.5px;
     width: 0;
     background-color: #ffe391;
-    transition: width .4s ease-in-out;
+    transition: width 0.4s ease-in-out;
 }
-.nav-link:hover::after{
+
+.nav-link:hover::after {
     width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .logo {
+        margin: 0 auto 1rem auto;
+        width: 80px;
+        height: 80px;
+    }
+
+    .navlist {
+        flex-direction: column;
+        align-items: center;
+        display: none; 
+    }
+
+    .navbar.active .navlist {
+        display: flex; 
+    }
+
+    .nav-link {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
+
+.hamburger {
+    display: none;
+    cursor: none;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #f2f2f2;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block; 
+    }
+
+    .hamburger.active div:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .hamburger.active div:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active div:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
 }

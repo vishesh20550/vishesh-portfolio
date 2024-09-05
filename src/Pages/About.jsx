@@ -20,13 +20,13 @@ export default function About() {
             <span id="expertise-span">My Expertise</span>
             <ul className="expertise-list">
               <li className="back-dev">
-                Backend Development
+                <div>Backend Development</div>
               </li>
               <li className="front-dev">
-                Fronted Development
+                <div>Frontend Development</div>
               </li>
               <li className="android-dev">
-                Android Development
+                <div>Android Development</div>
               </li>
             </ul>
           </div>
