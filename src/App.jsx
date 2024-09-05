@@ -25,18 +25,18 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/skills" element={<Skills />} />
-            <Route
+            {/* <Route
               path="/experience"
               element={<Experience />}
             />
             <Route
-              path="/vishesh20550.github.io/projects"
+              path="/projects"
               element={<Projects />}
             />
             <Route
-              path="/vishesh20550.github.io/contact"
+              path="/contact"
               element={<Contact />}
-            />
+            /> */}
           </Routes>
         </div>
       </Router>

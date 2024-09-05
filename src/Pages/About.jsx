@@ -1,10 +1,10 @@
 import React from 'react'
 import "../styles/about.css"
-import pp from "../assets/pp.jpeg"
+import pp from "../assets/pp.jpg"
 export default function About() {
   return (
     <div className="about-container">
-      <div className="content">
+      <div className="about-content">
         <div className="image-div">
           <img src={pp} alt="profile" />
         </div>

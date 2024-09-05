@@ -1,0 +1,58 @@
+[
+    {
+      "name": "React.js",
+      "img": "https://example.com/images/reactjs.png"
+    },
+    {
+      "name": "JavaScript",
+      "img": "https://example.com/images/javascript.png"
+    },
+    {
+      "name": "HTML5",
+      "img": "https://example.com/images/html5.png"
+    },
+    {
+      "name": "CSS3",
+      "img": "https://example.com/images/css3.png"
+    },
+    {
+      "name": "Java",
+      "img": "https://example.com/images/java.png"
+    },
+    {
+      "name": "Spring Boot",
+      "img": "https://example.com/images/springboot.png"
+    },
+    {
+      "name": "REST API Development",
+      "img": "https://example.com/images/restapi.png"
+    },
+    {
+      "name": "Kotlin",
+      "img": "https://example.com/images/android.png"
+    },
+    {
+      "name": "PostgreSQL",
+      "img": "https://example.com/images/postgresql.png"
+    },
+    {
+      "name": "MySQL",
+      "img": "https://example.com/images/mysql.png"
+    },
+    {
+      "name": "Firebase",
+      "img": "https://example.com/images/firebase.png"
+    },
+    {
+      "name": "JUnit",
+      "img": "https://example.com/images/junit.png"
+    },
+    {
+      "name": "Git",
+      "img": "https://example.com/images/git.png"
+    },
+    {
+      "name": "GitHub",
+      "img": "https://example.com/images/github.png"
+    }
+]

@@ -7,9 +7,11 @@
   padding: 2rem;
 }
 
-.content {
+.about-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
   max-width: 120rem;
   width: 100%;
   border-radius: 0.8rem;
@@ -23,15 +25,16 @@
 }
 
 .image-div img {
-  border-radius: 50%;
+  border-radius: 10%;
   width: 15rem;
-  height: 15rem;
+  height: 100%;
   object-fit: cover;
-  border: 0.3rem solid #333;
+  /* border: 1px solid #ffe391; */
 }
 
 .info-div {
-  margin-bottom: 2rem;
+  margin: 0 2rem 0 2rem;
+  padding-left: 3rem;
 }
 
 .info {

@@ -52,7 +52,7 @@ export default function Navbar() {
             Skills
           </NavLink>
         </li>
-        <li
+        {/* <li
           onMouseEnter={() => cursorChangeHandler("hovered")}
           onMouseLeave={() => cursorChangeHandler("")}
         >
@@ -75,7 +75,7 @@ export default function Navbar() {
           <NavLink className="nav-link" to={"/contact"}>
             Contact
           </NavLink>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );
