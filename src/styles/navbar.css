@@ -3,7 +3,6 @@
     padding: 0;
     margin: 0;
 }
-
 .navbar {
     padding: 0.5rem;
     display: flex;
@@ -47,7 +46,7 @@
     cursor: none;
 }
 
-.nav-link::after {
+.nav-link:not(.active):after {
     content: '';
     position: absolute;
     height: 1px;
@@ -62,6 +61,10 @@
     width: 100%;
 }
 
+.active {
+    color: #ffe391;
+    font-weight: bold;
+}
 @media screen and (max-width: 768px) {
     .navbar {
         flex-direction: column;

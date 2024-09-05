@@ -8,12 +8,12 @@ export default function Home() {
   const { cursorType, cursorChangeHandler } = useContext(MouseContext);
   return (
     <div className="home-container">
-      <div className="content">
-        <div className="introduction">
-          <span id="hi">Hi I am</span>
-          <span id="name">Vishesh Jain</span>
-            <span id="tagline">Innovating Code, Crafting Solutions</span>
-          <p id="desc">
+      <div className="home-content">
+        <div className="home-introduction">
+          <span id="home-hi">Hi I am</span>
+          <span id="home-name">Vishesh Jain</span>
+          <span id="home-tagline">Innovating Code, Crafting Solutions</span>
+          <p id="home-desc">
             A passionate software developer with a knack for transforming
             complex problems into elegant solutions. With expertise in Java,
             React.js, and Android development, I create innovative, user-centric
@@ -22,25 +22,31 @@ export default function Home() {
             excellence in every line of code.
           </p>
         </div>
-        <div className="socials">
-          <a
-            href="https://www.linkedin.com/in/visheshjainiiitd/"
-            target="_blank"
-            rel="noopener noreferrer"
-            onMouseEnter={() => cursorChangeHandler("hovered")}
-            onMouseLeave={() => cursorChangeHandler("")}
-          >
-            <img src={linkedin} alt="LinkedIn" id="linkedin-logo" />
-          </a>
-          <a
-            href="https://github.com/vishesh20550/"
-            target="_blank"
-            rel="noopener noreferrer"
-            onMouseEnter={() => cursorChangeHandler("hovered")}
-            onMouseLeave={() => cursorChangeHandler("")}
-          >
-            <img src={github} alt="Github" id="github-logo" />
-          </a>
+        <div className="home-socials">
+          <div>
+            <a
+              href="https://www.linkedin.com/in/visheshjainiiitd/"
+              target="_blank"
+              rel="noopener noreferrer"
+              onMouseEnter={() => cursorChangeHandler("hovered")}
+              onMouseLeave={() => cursorChangeHandler("")}
+            >
+              <img src={linkedin} alt="LinkedIn" id="linkedin-logo" />
+            </a>
+            <span>LinkedIn</span>
+          </div>
+          <div>
+            <a
+              href="https://github.com/vishesh20550/"
+              target="_blank"
+              rel="noopener noreferrer"
+              onMouseEnter={() => cursorChangeHandler("hovered")}
+              onMouseLeave={() => cursorChangeHandler("")}
+            >
+              <img src={github} alt="Github" id="github-logo" />
+            </a>
+            <span>Github</span>
+          </div>
         </div>
       </div>
     </div>

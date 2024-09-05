@@ -32,7 +32,7 @@ export default function Navbar() {
           onMouseEnter={() => cursorChangeHandler("hovered")}
           onMouseLeave={() => cursorChangeHandler("")}
         >
-          <NavLink className="nav-link" to={"/"}>
+          <NavLink className="nav-link" to={"/"} >
             Home
           </NavLink>
         </li>

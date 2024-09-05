@@ -11,7 +11,7 @@
     margin-right: 2rem;
 }
 
-.content {
+.home-content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -19,42 +19,63 @@
     column-gap: 2rem;
 }
 
-.introduction {
+.home-introduction {
     display: flex;
     flex-direction: column;
 }
 
-.introduction span {
+.home-introduction span {
     padding: 0.5rem;
 }
 
-.socials {
+.home-socials {
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
 }
+.home-socials div{
+    width: 200px;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: end;
+    align-items: center;
+}
 
-.socials img {
+.home-socials span {
+    color: #f2f2f2;
+    cursor: none;
+    margin-right: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.home-socials a img {
     height: 4rem;
     width: 4rem;
+    transition: transform 0.3s ease;
 }
 
-#linkedin-logo:hover, #github-logo:hover {
-    transform: scale(150%);
+.home-socials a:hover img {
+  transform: scale(130%);
+    cursor: none;
 }
 
-#hi {
+.home-socials a:hover + span {
+  opacity: 1;
+}
+
+#home-hi {
     font-size: 1.2rem;
 }
 
-#name {
+#home-name {
     font-size: 5rem;
     color: #f2f2f2;
     font-family: "Cinzel", serif;
 }
 
-#tagline {
+#home-tagline {
     color: #ffe391;
     font-size: 2.5rem;
     white-space: nowrap;
@@ -63,7 +84,7 @@
     animation: typing 3.5s steps(40, end) forwards, blink-caret 0.75s step-end infinite;
 }
 
-#desc {
+#home-desc {
     margin-top: 10px;
     font-size: 1.2rem;
     padding: 0.5rem;
@@ -71,55 +92,55 @@
 
 /* Media Queries for Responsiveness */
 @media screen and (max-width: 1024px) {
-    #name {
+    #home-name {
         font-size: 3rem; /* Smaller font size on medium screens */
     }
-    #tagline {
+    #home-tagline {
         font-size: 2rem;
     }
-    #desc {
+    #home-desc {
         font-size: 1rem;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .content {
+    .home-content {
         flex-direction: column; /* Stack introduction and socials vertically */
         align-items: center; /* Center align the content */
     }
 
-    #name {
+    #home-name {
         font-size: 2.5rem; /* Further reduce font size on smaller screens */
     }
 
-    #tagline {
+    #home-tagline {
         font-size: 1.8rem;
     }
 
-    #desc {
+    #home-desc {
         font-size: 0.9rem;
     }
 
-    .socials img {
+    .home-socials img {
         height: 3rem; /* Smaller icons for socials */
         width: 3rem;
     }
 }
 
 @media screen and (max-width: 480px) {
-    #name {
+    #home-name {
         font-size: 2rem; /* Adjust even more for mobile */
     }
 
-    #tagline {
+    #home-tagline {
         font-size: 1.5rem;
     }
 
-    #desc {
+    #home-desc {
         font-size: 0.8rem;
     }
 
-    .socials img {
+    .home-socials img {
         height: 2.5rem; /* Smaller icons for very small screens */
         width: 2.5rem;
     }
