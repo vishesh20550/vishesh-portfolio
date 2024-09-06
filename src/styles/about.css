@@ -1,10 +1,8 @@
 /* about.css */
 
 .about-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
+  padding: 1.5rem;
+  margin: 0 5rem 0 5rem;
 }
 
 .about-content {
@@ -15,64 +13,104 @@
   max-width: 120rem;
   width: 100%;
   border-radius: 0.8rem;
-  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px 2px #f2f2f2;
   padding: 2rem;
 }
 
 .image-div {
   text-align: center;
-  margin-bottom: 2rem;
 }
 
 .image-div img {
   border-radius: 10%;
-  width: 15rem;
+  width: 200px;
   height: 100%;
   object-fit: cover;
   /* border: 1px solid #ffe391; */
 }
 
-.info-div {
-  margin: 0 2rem 0 2rem;
-  padding-left: 3rem;
-}
-
 .info {
   font-size: 1rem;
   line-height: 1.6;
+  text-align:justify;
+  margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.info-div {
+  /* margin: 0 2rem 0 2rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2rem;
 }
 
 .expertise-div {
-  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 
 #expertise-span {
-  display: block;
-  font-size: 1.7rem;
+  display: inline-block;
+  font-size: 1.4rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
 
 .expertise-list {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     justify-content: start;
     list-style: none;
 }
 .expertise-list li{
-  margin: 1.5rem;
+  margin: 1rem;
 }
 .expertise-list li div{
-  padding: 2rem;
-  border: 1px solid #ffe391;
+  padding: 1.4rem;
+  border: 1px solid #f2f2f2;
+  border-radius: 0.8rem;
 }
 .expertise-list li div:hover{
   transform: scale(110%);
-  box-shadow: 0px 0px 10px 2px #ffe391;
+  box-shadow: 0 0 3px 3px rgba(242, 242, 242,0.5);
   transition: all ease-in-out;
-  transition-duration: 0.1s;
+  transition-duration: 0.3s;
+}
+.resume-button{
+  text-decoration: none;
+}
+.resume-button button{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 10rem;
+  height: auto;
+  padding: 1.1rem;
+  border: 1px solid #f2f2f2;
+  border-radius: 0.8rem;
+  background: none;
+  color: #f2f2f2;
+  font-size: 1.1rem;
+}
+.resume-button button:hover{
+  /* cursor: pointer; */
+  transform: scale(105%);
+  color: black;
+  background-color: #f2f2f2;
+  /* box-shadow: 0px 0px 10px 2px #ffe391; */
+  transition: all ease-in-out;
+  transition-duration: 0.2s;
+}
+.resume-button button img{
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .widwid-div {

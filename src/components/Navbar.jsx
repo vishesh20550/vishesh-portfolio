@@ -32,7 +32,7 @@ export default function Navbar() {
           onMouseEnter={() => cursorChangeHandler("hovered")}
           onMouseLeave={() => cursorChangeHandler("")}
         >
-          <NavLink className="nav-link" to={"/"} >
+          <NavLink className="nav-link" to={"/"}>
             Home
           </NavLink>
         </li>
@@ -67,7 +67,7 @@ export default function Navbar() {
           <NavLink className="nav-link" to={"/projects"}>
             Projects
           </NavLink>
-        </li>
+        </li>*/}
         <li
           onMouseEnter={() => cursorChangeHandler("hovered")}
           onMouseLeave={() => cursorChangeHandler("")}
@@ -75,7 +75,7 @@ export default function Navbar() {
           <NavLink className="nav-link" to={"/contact"}>
             Contact
           </NavLink>
-        </li> */}
+        </li>
       </ul>
     </nav>
   );

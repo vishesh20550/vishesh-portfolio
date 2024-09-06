@@ -6,7 +6,6 @@ export default function Skills() {
   const [skills, setSkills] = useState([]);
 
   useEffect(() => {
-    // Fetch skills data from JSON file
     setSkills(skillsJson);
   }, []);
 
@@ -15,8 +14,18 @@ export default function Skills() {
       <div className="skills-grid">
         {skills.map((skill, index) => (
           <div className="skill-card" key={index}>
-            <img src={skill.image} alt={skill.name} className="skill-image" />
-            <div className="skill-name">{skill.name}</div>
+            <div className="skill-card-inner">
+              <div className="skill-card-back">
+                <img
+                  src={skill.imgSrc}
+                  alt={skill.name}
+                  className="skill-image" 
+                />
+              </div>
+              <div className="skill-card-front">
+                <div className="skill-name">{skill.name}</div>
+              </div>
+            </div>
           </div>
         ))}
       </div>

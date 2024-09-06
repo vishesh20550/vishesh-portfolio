@@ -1,58 +1,66 @@
 [
-    {
-      "name": "React.js",
-      "img": "https://example.com/images/reactjs.png"
-    },
-    {
-      "name": "JavaScript",
-      "img": "https://example.com/images/javascript.png"
-    },
-    {
-      "name": "HTML5",
-      "img": "https://example.com/images/html5.png"
-    },
-    {
-      "name": "CSS3",
-      "img": "https://example.com/images/css3.png"
-    },
-    {
-      "name": "Java",
-      "img": "https://example.com/images/java.png"
-    },
-    {
-      "name": "Spring Boot",
-      "img": "https://example.com/images/springboot.png"
-    },
-    {
-      "name": "REST API Development",
-      "img": "https://example.com/images/restapi.png"
-    },
-    {
-      "name": "Kotlin",
-      "img": "https://example.com/images/android.png"
-    },
-    {
-      "name": "PostgreSQL",
-      "img": "https://example.com/images/postgresql.png"
-    },
-    {
-      "name": "MySQL",
-      "img": "https://example.com/images/mysql.png"
-    },
-    {
-      "name": "Firebase",
-      "img": "https://example.com/images/firebase.png"
-    },
-    {
-      "name": "JUnit",
-      "img": "https://example.com/images/junit.png"
-    },
-    {
-      "name": "Git",
-      "img": "https://example.com/images/git.png"
-    },
-    {
-      "name": "GitHub",
-      "img": "https://example.com/images/github.png"
-    }
+  {
+    "name": "Java",
+    "imgSrc": "/src/assets/java.png"
+  },
+  {
+    "name": "React.js",
+    "imgSrc": "/src/assets/reactjs.png"
+  },
+  {
+    "name": "Spring Boot",
+    "imgSrc": "/src/assets/springboot.png"
+  },
+  {
+    "name": "Python",
+    "imgSrc": "/src/assets/python.png"
+  },
+  {
+    "name": "JavaScript",
+    "imgSrc": "/src/assets/javascript.png"
+  },
+  {
+    "name": "HTML5",
+    "imgSrc": "/src/assets/html5.png"
+  },
+  {
+    "name": "CSS3",
+    "imgSrc": "/src/assets/css3.png"
+  },
+  {
+    "name": "REST API",
+    "imgSrc": "/src/assets/restapi.png"
+  },
+  {
+    "name": "Kotlin",
+    "imgSrc": "/src/assets/kotlin.png"
+  },
+  {
+    "name": "PostgreSQL",
+    "imgSrc": "/src/assets/postgres.png"
+  },
+  {
+    "name": "MySQL",
+    "imgSrc": "/src/assets/mysql.png"
+  },
+  {
+    "name": "Firebase",
+    "imgSrc": "/src/assets/firebase.png"
+  },
+  {
+    "name": "JUnit",
+    "imgSrc": "/src/assets/junit.png"
+  },
+  {
+    "name": "Git",
+    "imgSrc": "/src/assets/git.png"
+  },
+  {
+    "name": "GitHub",
+    "imgSrc": "/src/assets/githublogo.png"
+  },
+  {
+    "name": "Android OS",
+    "imgSrc": "/src/assets/android.png"
+  }
 ]

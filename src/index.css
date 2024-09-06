@@ -33,4 +33,76 @@ body,html{
   height: 100%;
   object-fit: cover;
 }
+.common-socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.common-socials div{
+    width: 200px;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: end;
+    align-items: center;
+}
+
+.common-socials span {
+    color: #f2f2f2;
+    cursor: none;
+    margin-right: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.common-socials a img {
+    height: 4rem;
+    width: 4rem;
+    transition: transform 0.3s ease;
+}
+
+.common-socials a:hover img {
+  transform: scale(130%);
+    cursor: none;
+}
+
+.common-socials a:hover + span {
+  opacity: 1;
+}
+
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 2px;
+  border: 1px solid #f2f2f2;
+  padding: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: #f2f2f2;
+  border: 1px solid black;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(242,242,242,0.5); 
+}
+
+
+@media screen and (max-width: 768px) {   
+  .common-socials img {
+        height: 3rem; 
+        width: 3rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .common-socials img {
+        height: 2.5rem; 
+        width: 2.5rem;
+    }
+}
 

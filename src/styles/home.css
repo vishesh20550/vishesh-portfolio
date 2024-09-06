@@ -18,82 +18,51 @@
     align-items: flex-start;
     column-gap: 2rem;
 }
-
+/* 
 .home-introduction {
     display: flex;
     flex-direction: column;
-}
+} */
 
 .home-introduction span {
     padding: 0.5rem;
 }
 
-.home-socials {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-}
-.home-socials div{
-    width: 200px;
-    display: flex;
-    flex-flow: row-reverse wrap;
-    justify-content: end;
-    align-items: center;
-}
-
-.home-socials span {
-    color: #f2f2f2;
-    cursor: none;
-    margin-right: 10px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.home-socials a img {
-    height: 4rem;
-    width: 4rem;
-    transition: transform 0.3s ease;
-}
-
-.home-socials a:hover img {
-  transform: scale(130%);
-    cursor: none;
-}
-
-.home-socials a:hover + span {
-  opacity: 1;
-}
 
 #home-hi {
+    display: inline-block;
     font-size: 1.2rem;
 }
 
 #home-name {
+    display: block;
     font-size: 5rem;
     color: #f2f2f2;
     font-family: "Cinzel", serif;
 }
 
 #home-tagline {
+    display: block;
+    width: 0;
+    max-width: fit-content;
     color: #ffe391;
     font-size: 2.5rem;
     white-space: nowrap;
     overflow: hidden;
     border-right: 0.05em solid #ffe391;
-    animation: typing 3.5s steps(40, end) forwards, blink-caret 0.75s step-end infinite;
+    animation: typing 3.5s steps(40, end) forwards , blink-caret 0.75s step-end infinite;
 }
 
 #home-desc {
+    display: inline-block;
     margin-top: 10px;
     font-size: 1.2rem;
     padding: 0.5rem;
 }
 
-/* Media Queries for Responsiveness */
 @media screen and (max-width: 1024px) {
     #home-name {
-        font-size: 3rem; /* Smaller font size on medium screens */
+        font-size: 3rem;
     }
     #home-tagline {
         font-size: 2rem;
@@ -105,12 +74,12 @@
 
 @media screen and (max-width: 768px) {
     .home-content {
-        flex-direction: column; /* Stack introduction and socials vertically */
-        align-items: center; /* Center align the content */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     #home-name {
-        font-size: 2.5rem; /* Further reduce font size on smaller screens */
+        font-size: 2.5rem; 
     }
 
     #home-tagline {
@@ -122,14 +91,14 @@
     }
 
     .home-socials img {
-        height: 3rem; /* Smaller icons for socials */
+        height: 3rem; 
         width: 3rem;
     }
 }
 
 @media screen and (max-width: 480px) {
     #home-name {
-        font-size: 2rem; /* Adjust even more for mobile */
+        font-size: 2rem; 
     }
 
     #home-tagline {
@@ -141,7 +110,7 @@
     }
 
     .home-socials img {
-        height: 2.5rem; /* Smaller icons for very small screens */
+        height: 2.5rem; 
         width: 2.5rem;
     }
 }
