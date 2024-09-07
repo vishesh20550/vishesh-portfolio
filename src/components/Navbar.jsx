@@ -16,67 +16,69 @@ export default function Navbar() {
     <nav className={`navbar ${isOpen ? "active" : ""}`}>
       <img src={logo} className="logo" alt="logo" />
 
-      <div
-        className={`hamburger ${isOpen ? "active" : ""}`}
-        onClick={toggleMenu}
-        onMouseEnter={() => cursorChangeHandler("hovered")}
-        onMouseLeave={() => cursorChangeHandler("")}
-      >
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+      <div className="nav-content">
+        <div
+          className={`hamburger ${isOpen ? "active" : ""}`}
+          onClick={toggleMenu}
+          onMouseEnter={() => cursorChangeHandler("hovered")}
+          onMouseLeave={() => cursorChangeHandler("")}
+        >
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
 
-      <ul className={`navlist ${isOpen ? "active" : ""}`}>
-        <li
-          onMouseEnter={() => cursorChangeHandler("hovered")}
-          onMouseLeave={() => cursorChangeHandler("")}
-        >
-          <NavLink className="nav-link" to={"/"}>
-            Home
-          </NavLink>
-        </li>
-        <li
-          onMouseEnter={() => cursorChangeHandler("hovered")}
-          onMouseLeave={() => cursorChangeHandler("")}
-        >
-          <NavLink className="nav-link" to={"/about"}>
-            About
-          </NavLink>
-        </li>
-        <li
-          onMouseEnter={() => cursorChangeHandler("hovered")}
-          onMouseLeave={() => cursorChangeHandler("")}
-        >
-          <NavLink className="nav-link" to={"/skills"}>
-            Skills
-          </NavLink>
-        </li>
-        {/* <li
+        <ul className={`navlist ${isOpen ? "active" : ""}`}>
+          <li
+            onMouseEnter={() => cursorChangeHandler("hovered")}
+            onMouseLeave={() => cursorChangeHandler("")}
+          >
+            <NavLink className="nav-link" to={"/"}>
+              Home
+            </NavLink>
+          </li>
+          <li
+            onMouseEnter={() => cursorChangeHandler("hovered")}
+            onMouseLeave={() => cursorChangeHandler("")}
+          >
+            <NavLink className="nav-link" to={"/about"}>
+              About
+            </NavLink>
+          </li>
+          <li
+            onMouseEnter={() => cursorChangeHandler("hovered")}
+            onMouseLeave={() => cursorChangeHandler("")}
+          >
+            <NavLink className="nav-link" to={"/skills"}>
+              Skills
+            </NavLink>
+          </li>
+          {/* <li
           onMouseEnter={() => cursorChangeHandler("hovered")}
           onMouseLeave={() => cursorChangeHandler("")}
         >
           <NavLink className="nav-link" to={"/experience"}>
             Experience
           </NavLink>
-        </li>
-        <li
-          onMouseEnter={() => cursorChangeHandler("hovered")}
-          onMouseLeave={() => cursorChangeHandler("")}
-        >
-          <NavLink className="nav-link" to={"/projects"}>
-            Projects
-          </NavLink>
         </li>*/}
-        <li
-          onMouseEnter={() => cursorChangeHandler("hovered")}
-          onMouseLeave={() => cursorChangeHandler("")}
-        >
-          <NavLink className="nav-link" to={"/contact"}>
-            Contact
-          </NavLink>
-        </li>
-      </ul>
+          <li
+            onMouseEnter={() => cursorChangeHandler("hovered")}
+            onMouseLeave={() => cursorChangeHandler("")}
+          >
+            <NavLink className="nav-link" to={"/projects"}>
+              Projects
+            </NavLink>
+          </li>
+          <li
+            onMouseEnter={() => cursorChangeHandler("hovered")}
+            onMouseLeave={() => cursorChangeHandler("")}
+          >
+            <NavLink className="nav-link" to={"/contact"}>
+              Contact
+            </NavLink>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 }

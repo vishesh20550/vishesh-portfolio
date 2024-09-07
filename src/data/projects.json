@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Student Mentorship Programme Portal, IIIT Delhi",
+    "desc": "Developed a centralized web portal for the Student Mentorship Program (SMP), improving accessibility for over 700+ mentees and 100+ mentors.",
+    "techUsed": ["React.js", "Python", "Postgres", "Bootstrap"],
+    "imgsrc": "",
+    "links": [
+      {
+        "linkName": "Github",
+        "link": "https://github.com/IIIT-Delhi/smp-portal"
+      }
+    ]
+  },
+  {
+    "name": "Innovative Sensory Development Solutions",
+    "desc": "Designed and tested sensory tools like 'The Tapper' and 'Raah', aimed at enhancing sensory development in children.",
+    "techUsed": ["Java", "Arduino", "C", "Android Studio"],
+    "imgsrc": "",
+    "links": [
+      {
+        "linkName": "Github(The Tapper)",
+        "link": "https://github.com/mojitosharma/The_Tapper.git"
+      },
+      {
+        "linkName": "PPT(The Tapper)",
+        "link": "https://docs.google.com/presentation/d/1Aph5ds3w8rZ7wIyv6xHQFLpUR20PIjdcq7XWBGDB_xM/edit?usp=sharing"
+      },
+      {
+        "linkName": "Github(Raah 2.0)",
+        "link": "https://github.com/mojitosharma/Raah.git"
+      },
+      {
+        "linkName": "Demo(Raah 2.0)",
+        "link": "https://www.youtube.com/watch?v=WYynAAloAXk"
+      }
+    ]
+  },
+  {
+    "name": "Digital Tuberculosis Screening Platform (WashKaro TB)",
+    "desc": "Developed a TB screening data collection app, aiding in early detection and public health efforts, now published on the Google Play Store.",
+    "techUsed": ["Android", "Firebase"],
+    "imgsrc": "",
+    "links": [
+      {
+        "linkName": "Demo",
+        "link": "https://drive.google.com/file/d/15_AlZtlSSpS427j01nDunQI1HK3nHvsp/view?usp=sharing"
+      }
+    ]
+  },
+  {
+    "name": "Advanced Gardening Companion Application (Gardeneer)",
+    "desc": "Built an Android app for gardening enthusiasts to access knowledge, guidance, and community support for successful gardening.",
+    "techUsed": ["Android", "Google Sheets", "Mobile Computing"],
+    "imgsrc": "",
+    "links": [
+      {
+        "linkName": "Github",
+        "link": "https://github.com/vishesh20550/Gardeneer.git"
+      },
+      {
+        "linkName": "PPT",
+        "link": "https://docs.google.com/presentation/d/1MLnjrqB7wX9pqfDSup3RJS0p4UbqnsBIG-z-UZFXaYo/edit?usp=sharing"
+      }
+    ]
+  }
+]

@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: start;
+  margin-top: 2rem;
 }
 
 .contact-content {
@@ -25,12 +26,16 @@
   font-family: 'Cinzel', serif;
 }
 .contact-info{
+  width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
 }
 
 .contact-info div {
+   width: 100%;
+   height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -54,4 +59,48 @@
 .contact-card:hover {
   transform: translateY(-10px);
   transition: transform 0.3s ease;
+}
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  .contact-card {
+    width: 90%; /* Make contact card full-width */
+    max-width: 350px; /* Reduce max width slightly */
+  }
+
+  .contact-card h2 {
+    font-size: 1.8rem; /* Adjust font size for smaller screens */
+  }
+
+  .contact-info div {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+
+  .contact-info strong, .contact-info span {
+    font-size: 1rem;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .contact-card {
+    padding: 1.5rem; /* Reduce padding for smaller screens */
+    max-width: 300px; /* Reduce max width */
+  }
+
+  .contact-card h2 {
+    font-size: 1.6rem; /* Further adjust font size */
+  }
+
+  .contact-info div {
+    word-spacing: normal;
+    /* word-break: break-all; */
+    font-size: 0.5rem; /* Adjust font size for better fit */
+  }
+
+  .contact-info strong, .contact-info span {
+    font-size: 0.9rem;
+  }
 }

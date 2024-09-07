@@ -61,3 +61,81 @@
   font-size: 1.5rem;
   font-family: 'Cinzel', serif;
 }
+
+
+@media (max-width: 1024px) {
+  .skills-container {
+    padding: 1.5rem;
+  }
+
+  .skills-grid {
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  .skill-card-inner {
+    width: 180px;
+    height: 180px;
+  }
+
+  .skill-image {
+    width: 90px;
+    height: 90px;
+  }
+
+  .skill-name {
+    font-size: 1.2rem;
+  }
+}
+
+/* For Mobile (Portrait) */
+@media (max-width: 768px) {
+  .skills-container {
+    padding: 1rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+
+  .skill-card-inner {
+    width: 150px;
+    height: 150px;
+  }
+
+  .skill-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .skill-name {
+    font-size: 1rem;
+  }
+}
+
+/* For Small Mobile Devices (e.g., iPhone SE) */
+@media (max-width: 480px) {
+  .skills-container {
+    padding: 0.5rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.8rem;
+  }
+
+  .skill-card-inner {
+    width: 120px;
+    height: 120px;
+  }
+
+  .skill-image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .skill-name {
+    font-size: 0.9rem;
+  }
+}

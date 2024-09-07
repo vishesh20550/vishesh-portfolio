@@ -91,6 +91,12 @@ body,html{
   background-color: rgba(242,242,242,0.5); 
 }
 
+@media screen and (max-width: 1024) {   
+  .common-socials img {
+        height: 3.5rem; 
+        width: 3.5rem;
+    }
+}
 
 @media screen and (max-width: 768px) {   
   .common-socials img {

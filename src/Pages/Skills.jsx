@@ -3,11 +3,7 @@ import skillsJson from "../data/skills.json";
 import "../styles/skills.css"; 
 
 export default function Skills() {
-  const [skills, setSkills] = useState([]);
-
-  useEffect(() => {
-    setSkills(skillsJson);
-  }, []);
+  const [skills, setSkills] = useState(skillsJson);
 
   return (
     <div className="skills-container">

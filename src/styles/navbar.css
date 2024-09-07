@@ -19,6 +19,9 @@
     width: 100px;
     height: 100px;
 }
+.nav-content{
+    display: flex;
+}
 
 .navlist {
     list-style: none;
@@ -65,14 +68,32 @@
     color: #ffe391;
     font-weight: bold;
 }
+
+.hamburger {
+    display: none;
+    cursor: none;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #f2f2f2;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
 @media screen and (max-width: 768px) {
     .navbar {
-        flex-direction: column;
+        /* flex-direction: column; */
         padding: 1rem;
     }
+    .nav-content{
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
 
     .logo {
-        margin: 0 auto 1rem auto;
+        /* margin: 0 auto 1rem auto; */
         width: 80px;
         height: 80px;
     }
@@ -91,22 +112,6 @@
         padding: 10px 20px;
         font-size: 1rem;
     }
-}
-
-.hamburger {
-    display: none;
-    cursor: none;
-}
-
-.hamburger div {
-    width: 25px;
-    height: 3px;
-    background-color: #f2f2f2;
-    margin: 5px;
-    transition: all 0.3s ease;
-}
-
-@media screen and (max-width: 768px) {
     .hamburger {
         display: block; 
     }
