@@ -4,6 +4,7 @@ import linkedin from "../assets/linkedin.png";
 import github from "../assets/github.png";
 import mail from "../assets/mail.png";
 import Toast from './Toast';
+import "../styles/socials.css"
 
 
 export default function Socials() {

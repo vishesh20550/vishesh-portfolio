@@ -1,0 +1,47 @@
+[
+  {
+    "companyName": "Brane Enterprises Private Limited",
+    "title": "Associate Solution Leader Trainee",
+    "startDate": "July 2024",
+    "endDate": "Present",
+    "location": "Hyderabad",
+    "type": "work",
+    "techStack": ["Java", "Spring Boot", "REST API", "JUnit"]
+  },
+  {
+    "companyName": "Jio Platforms Limited",
+    "title": "Jio Code Intern",
+    "startDate": "May 2023",
+    "endDate": "July 2023",
+    "location": "Gurugram",
+    "type": "work",
+    "techStack": ["Spark", "Scala", "Apache Kafka"]
+  },
+  {
+    "companyName": "SoC Labs, IIIT-Delhi",
+    "title": "Summer Research Intern",
+    "startDate": "May 2022",
+    "endDate": "July 2022",
+    "location": "New Delhi",
+    "type": "work",
+    "techStack": ["Python", "Django", "Vivado", "Arduino", "FPGA"]
+  },
+  {
+    "companyName": "Indraprastha Institute of Information Technology, Delhi",
+    "title": "Bachelor of Technology in Computer Science and Biosciences",
+    "startDate": "2020",
+    "endDate": "2024",
+    "location": "Delhi",
+    "type": "education",
+    "techStack": []
+  },
+  {
+    "companyName": "Mayo International School, New Delhi",
+    "title": "Central Board of Secondary education (CBSE)",
+    "startDate": "2018",
+    "endDate": "2020",
+    "location": "New Delhi",
+    "type": "education",
+    "techStack": []
+  }
+]

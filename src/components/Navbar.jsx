@@ -53,14 +53,14 @@ export default function Navbar() {
               Skills
             </NavLink>
           </li>
-          {/* <li
+          <li
           onMouseEnter={() => cursorChangeHandler("hovered")}
           onMouseLeave={() => cursorChangeHandler("")}
         >
           <NavLink className="nav-link" to={"/experience"}>
             Experience
           </NavLink>
-        </li>*/}
+        </li>
           <li
             onMouseEnter={() => cursorChangeHandler("hovered")}
             onMouseLeave={() => cursorChangeHandler("")}
@@ -75,6 +75,22 @@ export default function Navbar() {
           >
             <NavLink className="nav-link" to={"/contact"}>
               Contact
+            </NavLink>
+          </li>
+          <li
+            onMouseEnter={() => cursorChangeHandler("hovered")}
+            onMouseLeave={() => cursorChangeHandler("")}
+          >
+            <NavLink
+            id="nav-resume"
+              className="nav-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              to={
+                "https://drive.google.com/file/d/1JFi6AInjZKXFCIjq5iv3r8oLJnxjcTyb/view?usp=sharing"
+              }
+            >
+              Resume
             </NavLink>
           </li>
         </ul>

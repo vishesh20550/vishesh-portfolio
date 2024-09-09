@@ -1,0 +1,205 @@
+.experience-container {
+  padding: 2rem;
+}
+
+.toggle-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.toggle-buttons div {
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+  background: none;
+  color: #F2F2F2;
+  text-decoration: none;
+  letter-spacing: 0.3em;
+  position: relative;
+}
+
+.toggle-buttons div:hover {
+  color: #ffe391;
+  cursor: none;
+}
+
+.toggle-buttons div:not(.exp-active):after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  left: 0;
+  bottom: 0.5px;
+  width: 0;
+  background-color: #ffe391;
+  transition: width 0.3s ease-in-out;
+}
+
+.toggle-buttons div:hover::after {
+  width: 100%;
+}
+
+.toggle-buttons .exp-active {
+  color: #ffe391;
+  font-weight: bold;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background-color: #ffe391;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+  z-index: -1;
+}
+
+.timeline-item {
+  padding: 1rem;
+  position: relative;
+  width: 45%;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(242, 242, 242, 0.3);
+}
+
+.timeline-item.left {
+  left: 0;
+}
+
+.timeline-item.right {
+  left: 55%;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ffe391;
+  top: 15px;
+  border: 2px solid #fff;
+}
+
+.timeline-item.right::before {
+  left: -12.5%;
+}
+.timeline-item.left::before {
+  left: 109.7%;
+}
+
+.timeline-item .timeline-content {
+  padding: 1rem;
+}
+
+.timeline-item h3 {
+  font-size: 1.25rem;
+  color: #ffe391;
+}
+
+#exp-date {
+  color: #666;
+}
+
+#exp-location {
+  color: #666;
+}
+
+.timeline-item p {
+  margin: 0.5rem 0;
+}
+
+.exp-tech-stack {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Responsive Styles */
+
+/* For screens up to 1024px */
+@media (max-width: 1024px) {
+  .timeline-item {
+    width: 100%;
+    left: 0 !important; /* Align all items centrally */
+    margin-bottom: 2rem;
+  }
+  
+  .timeline::before {
+    display: none;
+  }
+  
+  .timeline-item::before {
+    display: none;
+  }
+
+  .timeline-item.right::before {
+    display: none;
+  }
+}
+
+/* For screens up to 768px */
+@media (max-width: 768px) {
+  .experience-container {
+    padding: 1.5rem;
+  }
+
+  .toggle-buttons div {
+    padding: 0.8rem;
+    margin: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .timeline-item {
+    width: 100%;
+    left: 0 !important;
+    margin-bottom: 1.5rem;
+  }
+
+  .timeline-item h3 {
+    font-size: 1.2rem;
+  }
+
+  .timeline-item p {
+    font-size: 1rem;
+  }
+}
+
+/* For screens up to 480px */
+@media (max-width: 480px) {
+  .experience-container {
+    padding: 1rem;
+  }
+
+  .toggle-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .toggle-buttons div {
+    margin: 0.5rem 0;
+    font-size: 0.8rem;
+  }
+
+  .timeline-item {
+    width: 100%;
+    left: 0 !important;
+    margin-bottom: 1rem;
+  }
+
+
+  .timeline-item h3 {
+    font-size: 1rem;
+  }
+
+  .timeline-item p {
+    font-size: 0.9rem;
+  }
+}
