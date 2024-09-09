@@ -50,13 +50,16 @@ export default function Experience() {
             <div className="timeline-content">
               <h3>{item.companyName}</h3>
               <p id="exp-title">{item.title}</p>
+              {selectedType === "education" && item.cgpa && (
+                <p className="exp-cgpa">{item.cgpa}</p>
+              )}
               <p id="exp-date">
                 {item.startDate} - {item.endDate}
               </p>
               <p id="exp-location">{item.location}</p>
               {selectedType === "work" && item.techStack && (
                 <p className="exp-tech-stack">
-                  Tech Stack: {item.techStack.join(", ")}
+                  Tech Stack: {item.techStack.join(" | ")}
                 </p>
               )}
             </div>

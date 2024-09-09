@@ -117,9 +117,10 @@
   margin: 0.5rem 0;
 }
 
-.exp-tech-stack {
+.exp-tech-stack, .exp-cgpa {
   font-size: 0.9rem;
   color: #666;
+  font-weight: bold;
 }
 
 /* Responsive Styles */

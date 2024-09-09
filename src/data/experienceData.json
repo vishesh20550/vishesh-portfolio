@@ -33,7 +33,7 @@
     "endDate": "2024",
     "location": "Delhi",
     "type": "education",
-    "techStack": []
+    "cgpa": "CGPA: 8.23"
   },
   {
     "companyName": "Mayo International School, New Delhi",
@@ -42,6 +42,6 @@
     "endDate": "2020",
     "location": "New Delhi",
     "type": "education",
-    "techStack": []
+    "cgpa": "Percentage: 94.8%"
   }
 ]
