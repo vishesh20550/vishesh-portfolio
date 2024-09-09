@@ -4,14 +4,17 @@ import experienceData from "../data/experienceData.json";
 import { MouseContext } from "../contexts/mouse-context";
 
 export default function Experience() {
-  const [filteredData, setFilteredData] = useState(experienceData);
+  const [filteredData, setFilteredData] = useState([]);
   const { cursorType, cursorChangeHandler } = useContext(MouseContext);
   const [selectedType, setSelectedType] = useState("work");
 
+  useEffect(() => {
+    const data = experienceData.filter((item) => item.type === selectedType);
+    setFilteredData(data);
+  }, [selectedType]); 
+
   const handleTypeChange = (type) => {
     setSelectedType(type);
-    const data = experienceData.filter((item) => item.type === type);
-    setFilteredData(data);
   };
 
 
